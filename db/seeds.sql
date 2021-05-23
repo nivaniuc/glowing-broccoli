@@ -1,4 +1,4 @@
-USE employees;
+USE employeesdb;
 
 INSERT INTO department (department_name)
 VALUES
@@ -7,7 +7,7 @@ VALUES
 ('Design'),
 ('Labor');
 
-INSERT INTO roles (title, salary, department_id)
+INSERT INTO role (title, salary, department_id)
 VALUES
 ('Manager', 55000, 1 ),
 ('CSS', 38000, 2),
@@ -15,7 +15,7 @@ VALUES
 ('HTML', 48000, 4),
 ('Entry Level', 32000, 4);
 
-INSERT INTO employees (first_name, last_name, roles_id, manager_id)
+INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES
 ('Mike', 'Oxlong', 1, null),
 ('Drew', 'Ligma', 2, 1),
